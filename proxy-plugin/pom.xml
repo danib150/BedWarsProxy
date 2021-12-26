@@ -14,6 +14,10 @@
 
     <repositories>
         <repository>
+            <id>alessiodp-repo</id>
+            <url>https://repo.alessiodp.com/releases/</url>
+        </repository>
+        <repository>
             <id>andrei1058-repo</id>
             <url>http://repo.andrei1058.com/releases</url>
         </repository>
@@ -45,8 +49,13 @@
         <dependency>
             <groupId>com.alessiodp.parties</groupId>
             <artifactId>parties-api</artifactId>
-            <version>3.1.12</version>
+            <version>3.1.14</version>
             <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>it.dbruni</groupId>
+            <artifactId>Lobby</artifactId>
+            <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>com.andrei1058.spigot.versionsupport</groupId>

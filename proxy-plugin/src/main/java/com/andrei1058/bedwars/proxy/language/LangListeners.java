@@ -40,6 +40,7 @@ public class LangListeners implements Listener {
     public void onJoin(PlayerJoinEvent e) {
         if (e == null) return;
         final Player p = e.getPlayer();
+
         if (preLoadedLanguage.containsKey(e.getPlayer().getUniqueId())) {
             LanguageManager.get().setPlayerLanguage(e.getPlayer(), preLoadedLanguage.get(e.getPlayer().getUniqueId()), true);
             preLoadedLanguage.remove(e.getPlayer().getUniqueId());

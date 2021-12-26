@@ -130,7 +130,7 @@ public class ArenaGUI {
 
         if (i.getItemMeta() != null){
             ItemMeta im = i.getItemMeta();
-            im.setDisplayName(ChatColor.translateAlternateColorCodes('&', BedWarsProxy.config.getString(ConfigPath.GENERAL_CONFIG_PLACEHOLDERS_REPLACEMENTS_SERVER_IP)));
+            im.setDisplayName(ChatColor.translateAlternateColorCodes('&', "&f&l"));
             im.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
             i.setItemMeta(im);
         }

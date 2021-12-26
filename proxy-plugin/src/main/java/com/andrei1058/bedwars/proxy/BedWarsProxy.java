@@ -110,6 +110,10 @@ public class BedWarsProxy extends JavaPlugin implements BedWars {
             getLogger().info("Loading internal Party system. /party");
         }
 
+        if (Bukkit.getPluginManager().getPlugin("Lobby") != null) {
+            getLogger().info("Hook into Lobby (by dbruni) support!");
+        }
+
         levelManager = new InternalLevel();
         Bukkit.getPluginManager().registerEvents(new LevelListeners(), this);
 
